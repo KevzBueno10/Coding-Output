@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFAS</title>
+    <link rel="stylesheet" href="LFAS.css">
+</head>
+<body >
+    
+    <nav>
+        <div class="nav-header">
+            <span class="logo"><img src="deped.png" alt="Logo" style="width: 200px; height: auto;"></span>
+           
+            <div class="header-text">
+                <div class="line1">Republic of the Philippines</div>
+                <div class="line2">Department of Education</div>
+                <div class="line3">REGION V (BICOL)</div>
+                <div class="line4">SCHOOLS DIVISION OFFICE OF CATANDUANES</div>
+            </div>
+        </div> 
+    </nav>
+    <div class="yellow"></div>
+    <hr>
+          <H2>LEAVE FORM APPLICATION SYSTEM</H2>
+    <div id="container" class="container">
+        <form action="index.php" method="post">
+
+                <li><b>1. OFFICE/DEPARTMENT: </b><br>
+                     <input type="text" class="O"placeholder="CALATAGAN HIGH SCHOOL" required></li>
+                <br>
+            <hr>
+                <li><b>2. NAME:</b><br>
+                    <input type="text" class="L" placeholder="Last Name" required>
+                    <input type="text" class="F"placeholder="First Name"required>
+                    <input type="text" class="M" placeholder="Middle Name"required></li>
+                <br>
+            <hr>
+        <br>
+              <div class="DOF">
+                <li><b>3. DATE OF FILING:</b></li>
+                <li class="POSITION"><b>4. POSITION:</b></li>
+                <li class="SALARY"><b>5. SALARY:</b></li></div>
+              <div class="trios">
+                    <input type="date"required class="dbox">
+                    <input type="text"required class="pbox" placeholder="Teacher">
+                    <input type="text"required class="sbox" placeholder="xx,xxx">
+                </div>
+            <br>
+        <hr>
+                <li class="DOA"><b>6. DETAILS OF APPLICATION</li></b>
+            <hr>
+    
+                <li class="A">A. TYPE OF LEAVE TO BE AVAILED OF:
+                    <br>
+                    <br>
+                    <Select class="form-control" name="6.A"  id="Type" required><br>
+                        <option value="Vacation Leave"><b>Vacation Leave</b> <span class="option-italic">(Sec. 51, Rule XVI, Omnibus Rules Implementing E.O. No. 292)</span></option>
+                        <option value="Mandatory/Forced Leave">Mandatory/Forced Leave  <span class="option-italic">(Sec. 25, Rule XVI, Omnibus Rules Implementing E.O. No. 292)</span></option>
+                            <option value="Sick Leave">Sick Leave  (Sec. 43, Rule XVI, Omnibus Rules Implementing E.O. No. 292) </option>
+                            <option value="Maternity Leave">Maternity Leave  (R.A. No. 11210 / IRR issued by CSC, DOLE and SSS)</option>
+                            <option value="Paternity Leave">Paternity Leave  (R.A. No. 8187 / CSC MC No. 71, s. 1998, as amended) </option>
+                            <option value="Special Previlage Leave">Special Previlage Leave  (Sec. 21, Rule XVI, Omnibus Rules Implementing E.O. No. 292) </option>
+                            <option value="Solo Parent Leave">Solo Parent Leave  (RA No. 8972 / CSC MC No. 8, s. 2004)</option>
+                            <option value="Study Leave">Study Leave  (Sec. 68, Rule XVI, Omnibus Rules Implementing E.O. No. 292) </option>
+                            <option value="10-Day VAWC Leave">10-Day VAWC Leave  (RA No. 9262 / CSC MC No. 15, s. 2005)</option>
+                            <option value="Rehabilitation Previlage">Rehabilitation Previlage  (Sec. 55, Rule XVI, Omnibus Rules Implementing E.O. No. 292)</option>
+                            <option value="Special Leave Benifits for Woaman">Special Leave Benifits for Woaman  (RA No. 9710 / CSC MC No. 25, s. 2010)
+                            </option>
+                            <option value="Special Emergency (Calamity) Leave">Special Emergency (Calamity) Leave  (CSC MC No. 2, s. 2012, as amended) </option>
+                            <option value="Adoption Leave">Adoption Leave (R.A. No. 8552) </option>
+                        </select> 
+                    <input type="text" placeholder="Others" class="Others">
+                </select></li>
+                <br>
+            <hr>
+                <li class="A">B. DETAILS OF LEAVE:<br><br>
+                     <p><i>In case of Vacation/Special Previlage Leave</i></p>
+                        <input type="checkbox" class="chk" value="DOAP">Within the Philippines<input type="text" placeholder="Specify" class="WP" > 
+                        <input type="checkbox" class="chk" value="DOAP" >Abroad <input type="text" placeholder="Specify" class="Abr">
+                    <br>
+                <br>
+         <p><i>In case of Sick Leave</i></p>
+                <input type="checkbox" class="chk" value="DOAP">In Hospital <input type="text" placeholder="Specify Illness">
+                <input type="checkbox" class="chk" value="DOAP">Out Patient <input type="text" placeholder="Specify Illness">
+            <br>
+        <br>
+             <p><i>In case of Special Leave Benefits for Woaman:</i></p>
+
+                <input type="checkbox" class="chk" value="DOAP"><input type="text" placeholder="Specify Illness">
+            <br>
+        <br>
+            <p><i>In case of Study Leave</i></p>
+                <input type="checkbox" class="chk" value="DOAP">Completion of Master's Degree 
+                <input type="checkbox" class="chk" value="DOAP">Bar/Board Examination Review
+         <br>
+    <br>
+            <p><i>Other purpose:</i></p>
+             <input type="checkbox" class="chk" value="DOAP">Monetization of Leave Credits 
+                <input type="checkbox" class="chk" value="DOAP">Terminal Leave
+     <br><br><hr>
+            <li class="A">C. NUMBER OF WORKING DAYS APPLIED FOR: 
+                <input type="number" class="No.">
+                <label for="">Inclusive Dates:</label>
+                <input type="date" name="Inclusive Dates" id="Inclusive Dates"> - <input type="date" id="Inclusive Dates">
+            <hr>
+        </li>
+            <li class="A">D. COMMUTATION:<br><br>
+                <input type="checkbox" class="chk"><label for="6d">Not Requested</label><br>
+                <input type="checkbox" class="chk"><label for="6d">Requested</label>
+            <br>
+        <hr>
+            <li class="DAA"><b>7. DETAILS OF ACTION ON APPLICATION</li></b>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+            <button>Done</button>
+        </form>
+    </div>
+
+</body>
+<hr>
+<div class="fb"></div>
+<footer>
+    <nav>
+        <div class="nav-header">
+            <span class="logo"><img src="chslogo.png" alt="Logo" style="width: 90px; height: auto;"></span>
+            <div class="footer-text"> 
+                <div class="footext"><h4>LEAVE FORM APPLICATION SYSTEM (LFAS) </h4></div>
+                <div class="footext">Calatagan High School</div>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+
+</html>
